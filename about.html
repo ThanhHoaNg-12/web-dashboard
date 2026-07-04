@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu dự án | FINANCE.BI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Aesthetic Blobs -->
+<div class="bg-glow-1"></div>
+<div class="bg-glow-2"></div>
+
+<!-- HEADER & NAVBAR -->
+<header>
+    <div class="navbar">
+        <a href="index.html" class="nav-logo">FINANCE<span>.BI</span></a>
+        <div class="nav-links">
+            <a href="index.html">Trang chủ</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="about.html" class="active">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+        <a href="dashboard.html" class="nav-btn">Xem Live Dashboard</a>
+    </div>
+</header>
+
+<!-- MAIN CONTENT CONTAINER -->
+<div class="container">
+    <div class="about-grid">
+        <!-- Project Description & Technology Flow -->
+        <div class="about-content">
+            <h2>Giới thiệu đề tài đồ án tốt nghiệp</h2>
+            <p style="font-weight: 600; color: var(--text-primary); font-size: 18px; margin-bottom: 16px; line-height: 1.4;">
+                Đề tài: "Xây dựng hệ thống báo cáo phân tích tình hình tài chính các doanh nghiệp bán lẻ niêm yết trên thị trường chứng khoán Việt Nam"
+            </p>
+            <p>
+                Trong bối cảnh chuyển đổi số đang diễn ra mạnh mẽ, dữ liệu ngày càng trở thành tài sản quan trọng đối với các doanh nghiệp. Hệ thống báo cáo thông minh (Business Intelligence - BI) kết hợp cùng kho dữ liệu (Data Warehouse) ra đời như một giải pháp trung tâm, cho phép tích hợp dữ liệu tài chính - chứng khoán từ các nguồn khác nhau, chuẩn hóa và tổ chức theo mô hình đa chiều nhằm phục vụ công tác phân tích hiệu quả hoạt động kinh doanh.
+            </p>
+            <p>
+                Đồ án tập trung xây dựng quy trình trích xuất tự động dữ liệu của 20 doanh nghiệp bán lẻ hàng đầu từ nguồn TCBS và VietCap bằng thư viện <code>vnstock</code>, lưu trữ trong hệ quản trị cơ sở dữ liệu PostgreSQL theo lược đồ Galaxy (Galaxy Schema), và phát triển các dashboard trực quan trên Power BI nhúng phục vụ quá trình giám sát, đánh giá và hỗ trợ ra quyết định đầu tư.
+            </p>
+
+            <h3 class="tech-stack-title">Quy trình công nghệ & Kiến trúc</h3>
+            <div class="tech-list">
+                <div class="tech-item">
+                    <div class="tech-icon" style="color: #38761d;">🐍</div>
+                    <div class="tech-info">
+                        <h4>Python (ETL & vnstock)</h4>
+                        <p>Trích xuất dữ liệu tài chính (Báo cáo cân đối kế toán, Báo cáo kết quả kinh doanh, Lưu chuyển tiền tệ, Giá cổ phiếu) từ API TCBS/VietCap qua thư viện vnstock. Thực hiện làm sạch và chuẩn hóa dữ liệu bằng Pandas.</p>
+                    </div>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon" style="color: #333333;">🐘</div>
+                    <div class="tech-info">
+                        <h4>PostgreSQL (Data Mart & Galaxy Schema)</h4>
+                        <p>Lưu trữ dữ liệu trong kho dữ liệu theo lược đồ Galaxy (Galaxy Schema) gồm 3 bảng Dimension (company, industry, date) và 6 bảng Fact để phục vụ truy vấn tối ưu.</p>
+                    </div>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon" style="color: #f1c232;">📊</div>
+                    <div class="tech-info">
+                        <h4>Power BI (Business Intelligence)</h4>
+                        <p>Kết nối trực tiếp PostgreSQL, thiết lập mô hình quan hệ, viết công thức đo lường DAX để phân tích các chỉ tiêu doanh số, hàng tồn kho, khả năng sinh lời và nhúng báo cáo lên web.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Student / Author Information Sidebar -->
+        <div class="about-sidebar-card">
+            <div class="profile-avatar">DATN</div>
+            <div class="profile-name">Đồ Án Tốt Nghiệp</div>
+            <div class="profile-title">Phân tích Tài chính Bán lẻ</div>
+            <p class="profile-bio">
+                Đề tài: "Xây dựng hệ thống báo cáo phân tích tình hình tài chính các doanh nghiệp bán lẻ niêm yết trên thị trường chứng khoán Việt Nam"
+            </p>
+            
+            <div class="profile-details">
+                <div class="profile-detail-item">
+                    <span class="profile-detail-label">Sinh viên:</span>
+                    <span class="profile-detail-value">Nguyễn Thanh Hoa</span>
+                </div>
+                <div class="profile-detail-item">
+                    <span class="profile-detail-label">Mã sinh viên:</span>
+                    <span class="profile-detail-value">20227230</span>
+                </div>
+                <div class="profile-detail-item">
+                    <span class="profile-detail-label">Lớp chuyên ngành:</span>
+                    <span class="profile-detail-value">Hệ thống thông tin quản lý - K67</span>
+                </div>
+                <div class="profile-detail-item">
+                    <span class="profile-detail-label">Giáo viên hướng dẫn:</span>
+                    <span class="profile-detail-value">TS. Lê Hải Hà</span>
+                </div>
+                <div class="profile-detail-item">
+                    <span class="profile-detail-label">Khoa đào tạo:</span>
+                    <span class="profile-detail-value">Toán ứng dụng và Tin học</span>
+                </div>
+                <div class="profile-detail-item">
+                    <span class="profile-detail-label">Năm học:</span>
+                    <span class="profile-detail-value">2025 - 2026</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-brand">FINANCE<span>.BI</span></div>
+        <div class="footer-nav">
+            <a href="index.html">Trang chủ</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2026 - Financial Dashboard Project. Developed for DATN.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

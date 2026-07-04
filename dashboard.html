@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard tài chính | FINANCE.BI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-layout">
+
+<!-- Background Aesthetic Blobs -->
+<div class="bg-glow-1"></div>
+<div class="bg-glow-2"></div>
+
+<!-- HEADER & NAVBAR -->
+<header>
+    <div class="navbar">
+        <a href="index.html" class="nav-logo">FINANCE<span>.BI</span></a>
+        <div class="nav-links">
+            <a href="index.html">Trang chủ</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+        <a href="dashboard.html" class="nav-btn">Xem Live Dashboard</a>
+    </div>
+</header>
+
+<!-- FULLSCREEN POWER BI WRAPPER (Occupies 100% of remaining screen height) -->
+<div class="dashboard-fullscreen-container" id="dashboard-container">
+    
+    <!-- Floating Fullscreen Action Button -->
+    <button class="fullscreen-toggle-btn" onclick="toggleFullscreen()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+        <span>Toàn màn hình web</span>
+    </button>
+
+    <!-- Embedded Power BI Report -->
+    <iframe
+        title="da_tot_nghiep"
+        src="https://app.powerbi.com/view?r=eyJrIjoiNDAzZTQxYTAtYjZjOS00ZDI2LWFkNmQtN2MzYjA1ZjdiN2IyIiwidCI6IjYzNjI5NTdhLTg3YjMtNDQ1MS05OTNhLTkzNzJlNTBjNjc5NyIsImMiOjEwfQ%3D%3D&pageName=a9e25f6a58167c6b75d7"
+        frameborder="0"
+        allowFullScreen="true">
+    </iframe>
+</div>
+
+<!-- JAVASCRIPT FOR BROWSER FULLSCREEN TOGGLE -->
+<script>
+    function toggleFullscreen() {
+        var elem = document.getElementById("dashboard-container");
+        var btnText = document.querySelector(".fullscreen-toggle-btn span");
+        var btnIcon = document.querySelector(".fullscreen-toggle-btn svg");
+        
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+            // Enter Fullscreen
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+            btnText.textContent = "Thu nhỏ";
+            btnIcon.innerHTML = '<path d="M4 14h6v6m10-6h-6v6M4 10h6V4m10 6h-6V4"></path>'; // Exit fullscreen icon
+        } else {
+            // Exit Fullscreen
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) { /* Safari */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE11 */
+                document.msExitFullscreen();
+            }
+            btnText.textContent = "Toàn màn hình web";
+            btnIcon.innerHTML = '<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>'; // Enter fullscreen icon
+        }
+    }
+    
+    // Listen for fullscreen change event (e.g. if user presses ESC)
+    function exitHandler() {
+        var btnText = document.querySelector(".fullscreen-toggle-btn span");
+        var btnIcon = document.querySelector(".fullscreen-toggle-btn svg");
+        
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+            btnText.textContent = "Toàn màn hình web";
+            btnIcon.innerHTML = '<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>';
+        }
+    }
+    
+    document.addEventListener('fullscreenchange', exitHandler);
+    document.addEventListener('webkitfullscreenchange', exitHandler);
+    document.addEventListener('mozfullscreenchange', exitHandler);
+    document.addEventListener('MSFullscreenChange', exitHandler);
+</script>
+
+</body>
+</html>
