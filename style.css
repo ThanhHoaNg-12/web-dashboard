@@ -918,3 +918,121 @@ body.dashboard-layout header {
     transform: translateY(-2px);
     box-shadow: var(--shadow-glow);
 }
+
+/* Company Table & Badges for About Page */
+.company-table-container {
+    overflow-x: auto;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 24px;
+}
+
+.company-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+}
+
+.company-table th {
+    padding: 14px 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    background: var(--bg-surface-card);
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.company-table td {
+    padding: 14px 18px;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+.company-table tr:last-child td {
+    border-bottom: none;
+}
+
+.company-table tr {
+    transition: var(--transition);
+}
+
+.company-table tr:hover {
+    background: rgba(79, 70, 229, 0.02);
+}
+
+.ticker-symbol {
+    font-weight: 800;
+    color: var(--primary);
+    background: rgba(79, 70, 229, 0.06);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.badge-exchange {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.badge-hose {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--accent);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.badge-hnx {
+    background: rgba(8, 145, 178, 0.1);
+    color: var(--secondary);
+    border: 1px solid rgba(8, 145, 178, 0.2);
+}
+
+.badge-upcom {
+    background: rgba(234, 88, 12, 0.1);
+    color: #ea580c;
+    border: 1px solid rgba(234, 88, 12, 0.2);
+}
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: var(--bg-surface);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 13.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    background: var(--bg-surface-hover);
+    color: var(--text-primary);
+    border-color: var(--border-hover);
+}
+
+.filter-btn.active {
+    background: var(--primary-gradient);
+    color: white;
+    border-color: transparent;
+    box-shadow: var(--shadow-sm);
+}

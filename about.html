@@ -36,6 +36,158 @@
             </p>
         </div>
 
+        <!-- Danh sách 20 doanh nghiệp phân tích -->
+        <div style="border-bottom: 1px solid var(--border); padding-bottom: 28px; margin-bottom: 32px;">
+            <h2 style="font-size: 26px; font-weight: 700; margin-bottom: 14px; color: var(--text-primary);">Danh sách 20 doanh nghiệp phân tích</h2>
+            <p style="font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">
+                Dưới đây là danh sách 20 doanh nghiệp thuộc ngành Bán lẻ lớn nhất niêm yết trên thị trường chứng khoán Việt Nam nằm trong phạm vi nghiên cứu và trực quan hóa dữ liệu của dự án:
+            </p>
+            
+            <!-- Bộ lọc Sàn giao dịch -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Tất cả (20)</button>
+                <button class="filter-btn" data-filter="HOSE">HOSE (12)</button>
+                <button class="filter-btn" data-filter="HNX">HNX (2)</button>
+                <button class="filter-btn" data-filter="UPCOM">UPCOM (6)</button>
+            </div>
+
+            <!-- Bảng danh sách doanh nghiệp -->
+            <div class="company-table-container">
+                <table class="company-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 80px;">STT</th>
+                            <th style="width: 120px;">Mã CK</th>
+                            <th style="width: 120px;">Sàn</th>
+                            <th>Tên doanh nghiệp</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="company-row" data-exchange="HOSE">
+                            <td>1</td>
+                            <td><span class="ticker-symbol">AST</span></td>
+                            <td><span class="badge-exchange badge-hose">HOSE</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Dịch vụ Hàng không Taseco</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="HOSE">
+                            <td>2</td>
+                            <td><span class="ticker-symbol">CTF</span></td>
+                            <td><span class="badge-exchange badge-hose">HOSE</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần City Auto</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="HOSE">
+                            <td>3</td>
+                            <td><span class="ticker-symbol">DGW</span></td>
+                            <td><span class="badge-exchange badge-hose">HOSE</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Thế Giới Số</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="HOSE">
+                            <td>4</td>
+                            <td><span class="ticker-symbol">FRT</span></td>
+                            <td><span class="badge-exchange badge-hose">HOSE</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Bán lẻ Kỹ thuật số FPT</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="HOSE">
+                            <td>5</td>
+                            <td><span class="ticker-symbol">HAX</span></td>
+                            <td><span class="badge-exchange badge-hose">HOSE</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Dịch vụ Ô tô Hàng Xanh</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="HOSE">
+                            <td>6</td>
+                            <td><span class="ticker-symbol">MWG</span></td>
+                            <td><span class="badge-exchange badge-hose">HOSE</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Đầu tư Thế giới Di động</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="HOSE">
+                            <td>7</td>
+                            <td><span class="ticker-symbol">PET</span></td>
+                            <td><span class="badge-exchange badge-hose">HOSE</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Tổng Công ty Cổ phần Dịch vụ Tổng hợp Dầu khí</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="HOSE">
+                            <td>8</td>
+                            <td><span class="ticker-symbol">PIT</span></td>
+                            <td><span class="badge-exchange badge-hose">HOSE</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Xuất nhập khẩu Petrolimex</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="HOSE">
+                            <td>9</td>
+                            <td><span class="ticker-symbol">PNJ</span></td>
+                            <td><span class="badge-exchange badge-hose">HOSE</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Vàng bạc Đá quý Phú Nhuận</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="HOSE">
+                            <td>10</td>
+                            <td><span class="ticker-symbol">SBV</span></td>
+                            <td><span class="badge-exchange badge-hose">HOSE</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Siam Brothers Việt Nam</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="HOSE">
+                            <td>11</td>
+                            <td><span class="ticker-symbol">SVC</span></td>
+                            <td><span class="badge-exchange badge-hose">HOSE</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Dịch vụ Tổng hợp Sài Gòn</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="HOSE">
+                            <td>12</td>
+                            <td><span class="ticker-symbol">SVT</span></td>
+                            <td><span class="badge-exchange badge-hose">HOSE</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Công nghệ Sài Gòn Viễn Đông</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="HNX">
+                            <td>13</td>
+                            <td><span class="ticker-symbol">HUT</span></td>
+                            <td><span class="badge-exchange badge-hnx">HNX</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Tasco</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="HNX">
+                            <td>14</td>
+                            <td><span class="ticker-symbol">PSD</span></td>
+                            <td><span class="badge-exchange badge-hnx">HNX</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Dịch vụ Phân phối Tổng hợp Dầu khí</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="UPCOM">
+                            <td>15</td>
+                            <td><span class="ticker-symbol">AFX</span></td>
+                            <td><span class="badge-exchange badge-upcom">UPCOM</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Xuất nhập khẩu Nông sản Thực phẩm An Giang</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="UPCOM">
+                            <td>16</td>
+                            <td><span class="ticker-symbol">HTM</span></td>
+                            <td><span class="badge-exchange badge-upcom">UPCOM</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Tổng Công ty Thương mại Hà Nội</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="UPCOM">
+                            <td>17</td>
+                            <td><span class="ticker-symbol">KGM</span></td>
+                            <td><span class="badge-exchange badge-upcom">UPCOM</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Xuất nhập khẩu Kiên Giang</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="UPCOM">
+                            <td>18</td>
+                            <td><span class="ticker-symbol">PIV</span></td>
+                            <td><span class="badge-exchange badge-upcom">UPCOM</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần PIV</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="UPCOM">
+                            <td>19</td>
+                            <td><span class="ticker-symbol">SAS</span></td>
+                            <td><span class="badge-exchange badge-upcom">UPCOM</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần Dịch vụ Hàng không Sân bay Tân Sơn Nhất</td>
+                        </tr>
+                        <tr class="company-row" data-exchange="UPCOM">
+                            <td>20</td>
+                            <td><span class="ticker-symbol">STH</span></td>
+                            <td><span class="badge-exchange badge-upcom">UPCOM</span></td>
+                            <td style="font-weight: 600; color: var(--text-primary);">Công ty Cổ phần STH Holdings</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
         <!-- Các chủ điểm phân tích Section (Dashboard Core Pages) -->
         <div style="border-bottom: 1px solid var(--border); padding-bottom: 28px; margin-bottom: 32px;">
             <h2 style="font-size: 26px; font-weight: 700; margin-bottom: 14px; color: var(--text-primary);">Các chủ điểm phân tích trên Dashboard</h2>
@@ -189,6 +341,33 @@
         </div>
     </div>
 </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const tableRows = document.querySelectorAll('.company-row');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                tableRows.forEach(row => {
+                    const exchange = row.getAttribute('data-exchange');
+                    if (filterValue === 'all' || exchange === filterValue) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
